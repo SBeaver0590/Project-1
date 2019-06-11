@@ -78,18 +78,17 @@ function printQuote() {
 quotes randomly. Thanks for your time and patience while reading my rookie code. The story kinda shows the
 reader how the information is being processed in my mind. 
 ***/
+function random_bg_color() {
+  var x = Math.floor(Math.random() * 256);
+  var y = Math.floor(Math.random() * 256);
+  var z = Math.floor(Math.random() * 256);
+  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+console.log(bgColor);
 
-function GetMeARandomColor(quotes){
-  var aEverything = ["0", "1", "2", "3", "4"]
-  var sTheColor = "#";
-for(i=0; i < 6; i++)
-{
-   iRandomQuote = Math.floor(Math.random()* 5);
-   sTheColor += aEverything[iRandomQuote];
-console.log(sTheColor);
-}  
-return sTheColor;
+  document.body.style.background = bgColor;
 }
+
+random_bg_color();
 
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
