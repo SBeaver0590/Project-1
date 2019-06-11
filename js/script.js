@@ -74,7 +74,17 @@ function printQuote() {
  htmlString += '</p>';
  document.getElementById('quote-box').innerHTML = htmlString; 
 }
-
+function GetMeARandomColor(quotes){
+  var aEverything = ["0", "1", "2", "3", "4"]
+  var sTheColor = "#";
+for(i=0; i < 6; i++)
+{
+   iRandomNumber = Math.floor(Math.random()* 5);
+   sTheColor += aEverything[iRandomNumber];
+   //console.log(sTheColor);
+}  
+return sTheColor;
+}
 /*** Once printQuote starts doing his thing and working properly you can see him on a webpage. Slide through
 quotes randomly. Thanks for your time and patience while reading my rookie code. The story kinda shows the
 reader how the information is being processed in my mind. 
