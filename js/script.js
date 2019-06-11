@@ -62,6 +62,7 @@ all the time just that one instance.
 function printQuote() {
  var htmlString = '';
  var actualQuote = getRandomQuote();
+ random_bg_color();
 
  htmlString = '<p class="quote">' + actualQuote.quote + '</p>';
  htmlString += '<p class="source">' + actualQuote.source 
@@ -83,12 +84,14 @@ function random_bg_color() {
   var y = Math.floor(Math.random() * 256);
   var z = Math.floor(Math.random() * 256);
   var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-console.log(bgColor);
+  console.log(bgColor);
 
   document.body.style.background = bgColor;
 }
 
 random_bg_color();
-setInterval(function(){ printQuote(); }, 200);
+setInterval(function(){ 
+  printQuote(); 
+}, 20000);
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
