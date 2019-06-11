@@ -89,6 +89,6 @@ console.log(bgColor);
 }
 
 random_bg_color();
-
+setInterval(function(){ printQuote(); }, 25000);
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
