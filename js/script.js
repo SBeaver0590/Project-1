@@ -19,11 +19,13 @@ var quotes = [
   },
   {
     quote : "The beginning is always today.",
-    source : "Mary Wollstonecraft Shelley"  
+    source : "Mary Wollstonecraft Shelley",
+    tag : "Inspirational"  
   },
   {
     quote : "Every moment is a fresh beginning.",
-    source : "T.S.Eliot"
+    source : "T.S.Eliot",
+    tag : "Inspirational"
   },
   {
     quote : "It's never too late to be what you might have been.",
@@ -71,6 +73,9 @@ function printQuote() {
  }
  if(actualQuote.year) {
   htmlString += '<span class="year">' + actualQuote.year + '</span>';
+ }
+ if(actualQuote.tag) {
+  htmlString += '<p class="tag">' + actualQuote.tag + '</p>';
  }
  htmlString += '</p>';
  document.getElementById('quote-box').innerHTML = htmlString; 
