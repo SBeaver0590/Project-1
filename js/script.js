@@ -79,8 +79,8 @@ function GetMeARandomColor(quotes){
   var sTheColor = "#";
 for(i=0; i < 6; i++)
 {
-   iRandomNumber = Math.floor(Math.random()* 5);
-   sTheColor += aEverything[iRandomNumber];
+   iRandomQuote = Math.floor(Math.random()* 5);
+   sTheColor += aEverything[iRandomQuote];
    //console.log(sTheColor);
 }  
 return sTheColor;
