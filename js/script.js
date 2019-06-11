@@ -81,7 +81,7 @@ for(i=0; i < 6; i++)
 {
    iRandomQuote = Math.floor(Math.random()* 5);
    sTheColor += aEverything[iRandomQuote];
-   //console.log(sTheColor);
+console.log(sTheColor);
 }  
 return sTheColor;
 }
