@@ -85,10 +85,10 @@ quotes randomly. Thanks for your time and patience while reading my rookie code.
 reader how the information is being processed in my mind. 
 ***/
 function random_bg_color() {
-  var x = Math.floor(Math.random() * 256);
-  var y = Math.floor(Math.random() * 256);
-  var z = Math.floor(Math.random() * 256);
-  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  var red = Math.floor(Math.random() * 256);
+  var green = Math.floor(Math.random() * 256);
+  var blue = Math.floor(Math.random() * 256);
+  var bgColor = "rgb(" + red + "," + green + "," + blue + ")";
   console.log(bgColor);
 
   document.body.style.background = bgColor;
